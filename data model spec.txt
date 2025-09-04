@@ -1,0 +1,24 @@
+A business transaction is an exchange of goods for payment.
+The transaction is executed on a date.
+
+An invoice is a type of business transaction.
+The invoice contains invoice lines.
+
+The invoice line contains a product code, the number of products purchased, and a purchase price.
+The product is a bill of materials with a code and a label.
+The product also has a catalog price.
+The invoice contains a total amount.
+
+The invoice is linked to a customer, who is a legal entity.
+
+The receipt is an in-store purchase.
+
+The receipt is a type of business transaction.
+
+The receipt contains receipt lines. Each line is linked to a product. The line contains a number of products and a store purchase price that can be discounted in connection with a marketing campaign.
+
+The receipt line is not a type of receipt.
+
+The store is a coded list with the code and label attributes. The store is part of the retail functional area.
+
+The store is located in a city that is a codified list code and label
