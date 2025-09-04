@@ -1,0 +1,31 @@
+link:https://www.acceliance.fr/en/offers/governance-for-your-data-platform/[image:readme/logo-acc-amp-gauche-2400.png[]]
+
+= AI For Data Modeling
+
+
+Accceliance is pleased to provide you with a **Data Model Generator based on Artificial Intelligence**
+
+= How does it work ?
+
+You provide natural language Data Model description
+a sample file is provided as a demo
+
+= The underlying Technology
+The stack is based on link:https://github.com/ModelioOpenSource/Modelio[Modelio modeler,window=_blank] with link:https://openai.com/[OpenAI,window=_blank]
+Acceliance provides Datawarehouse Governance innovating tool on its link:https://github.com/acceliance[Github repo,window=_blank]
+= Running the Live Demo
+
+== Entering your OpenAI API Key
+
+== Launching the Data Model generation
+
+== Verifying the generated Data Model
+
+== Verifying the generated Documentation
+
+=== Outputting the Documentation as Excel file
+
+== What's Next ?
+In a next version we will provide **IA continuity** facility. What is that ?
+When invoking IA 2 times, the generated output may vay
+This natural IA variation can be avoided so it is possible to expand Data Model specification while keeping solid versioning
