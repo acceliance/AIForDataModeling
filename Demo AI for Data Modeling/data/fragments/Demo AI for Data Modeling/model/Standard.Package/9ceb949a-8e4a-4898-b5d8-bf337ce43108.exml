@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="datamodel" version="4">
+  <OBJECT>
+    <ID name="datamodel" mc="Standard.Package" uid="9ceb949a-8e4a-4898-b5d8-bf337ce43108"/>
+    <PID name="acceliance" mc="Standard.Package" uid="aae36fef-b79b-40fc-bf31-04549c426102"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[datamodel]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="CartographyManagerRootOfTheModel" mc="Infrastructure.Stereotype" uid="6a39137e-8d53-4358-8a20-41bdf91c9218"/>
+      </LINK>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="6a39137e-8d53-4358-8a20-41bdf91c9218" mc="Infrastructure.TypedPropertyTable" uid="027e2eb2-0f2f-4888-bb1d-b3c4b7485040"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[6a39137e-8d53-4358-8a20-41bdf91c9218]]></ATT>
+            <ATT name="Content"><![CDATA[#Thu Sep 04 10:43:28 CEST 2025
+isRootOfTheModel=true
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="a62954af-2503-49e6-a1c9-876db56c44d4"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

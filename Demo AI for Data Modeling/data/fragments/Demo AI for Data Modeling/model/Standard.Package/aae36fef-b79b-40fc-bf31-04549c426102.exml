@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="acceliance" version="4">
+  <OBJECT>
+    <ID name="acceliance" mc="Standard.Package" uid="aae36fef-b79b-40fc-bf31-04549c426102"/>
+    <PID name="fr" mc="Standard.Package" uid="208083fc-27a0-4916-a8b2-b2d803b3bcdb"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[acceliance]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="datamodel" mc="Standard.Package" uid="9ceb949a-8e4a-4898-b5d8-bf337ce43108"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

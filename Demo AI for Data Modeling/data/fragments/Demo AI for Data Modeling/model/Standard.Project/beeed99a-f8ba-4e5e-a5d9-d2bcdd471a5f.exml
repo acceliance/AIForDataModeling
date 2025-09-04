@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Demo AI for Data Modeling" version="4">
+  <OBJECT>
+    <ID name="Demo AI for Data Modeling" mc="Standard.Project" uid="beeed99a-f8ba-4e5e-a5d9-d2bcdd471a5f"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[Demo AI for Data Modeling]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="root" mc="Standard.Package" uid="6cda095e-b964-416f-a674-896d8b4a0526"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="Demo AI for Data Modeling" mc="Infrastructure.DiagramSet" uid="053859d5-35ff-4ca0-a15e-239f1a6fbcd7"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
