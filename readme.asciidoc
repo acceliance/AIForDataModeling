@@ -187,7 +187,7 @@ It is possible to generate link:https://www.acceliance.fr/en/offers/automated-da
 
 = What's Next ?
 
-In a next version we will provide **IA continuity** facility. What is that ?
+In a next version we will provide **GenAI continuity** facility. What is that ?
 
 When invoking IA 2 times, the generated output may vary
 
