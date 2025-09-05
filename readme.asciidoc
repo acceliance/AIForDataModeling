@@ -189,8 +189,8 @@ It is possible to generate link:https://www.acceliance.fr/en/offers/automated-da
 
 In a next version we will provide **GenAI Continuity** facility. What is that ?
 
-When invoking IA 2 times, the generated output may vary
+When invoking AI 2 times, the generated output may vary
 
-This natural IA variation can be avoided so it is possible to expand Data Model specification while keeping **solid versioning**
+This natural AI variation can be avoided so it is possible to expand Data Model specification while keeping **solid versioning**
 
 __Stay tuned !__
