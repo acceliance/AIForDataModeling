@@ -1,31 +1,194 @@
 link:https://www.acceliance.fr/en/offers/governance-for-your-data-platform/[image:readme/logo-acc-amp-gauche-2400.png[]]
 
-= AI For Data Modeling
+= Artificial Intelligence For Data Modeling
 
 
-Accceliance is pleased to provide you with a **Data Model Generator based on Artificial Intelligence**
+Accceliance is pleased to provide you with a **Data Model Generator based on Artificial Intelligence** as a demonstration of AI power
 
 = How does it work ?
 
 You provide natural language Data Model description
-a sample file is provided as a demo
+a link:https://github.com/acceliance/AIForDataModeling/blob/main/data%20model%20spec.txt[sample file,window=_blank] is provided as a demo
+
+NOTE: The description must be accurate so to limit the interpretation by the IA Agent
+
+IMPORTANT: The Agent is preset to to be **Experimented Data Architect** skilled so you dont need to handle this in the prompt
+
+Then the IA Agent is set to cimmunicate proper structured information back to Modelio modeler
 
 = The underlying Technology
 The stack is based on link:https://github.com/ModelioOpenSource/Modelio[Modelio modeler,window=_blank] with link:https://openai.com/[OpenAI,window=_blank]
+
 Acceliance provides Datawarehouse Governance innovating tool on its link:https://github.com/acceliance[Github repo,window=_blank]
+
 = Running the Live Demo
+
+== The environment is based on Modelio, so download it at first
+
+link:https://github.com/ModelioOpenSource/Modelio/releases/tag/v5.4.1[*Modelio 5.4.1 Download*,window=_blank]
+
+== Opening the provided and empty Modelio project
+
+Open the Modelio workspace:
+
+image:readme/ai data modeling 1.png[Opening project folder]
+
+Then select the local folder created after cloning the Github repo:
+
+image:readme/ai data modeling 2.png[Opening project folder]
 
 == Entering your OpenAI API Key
 
+Open the Modules menu:
+
+image:readme/ai data modeling 3.png[Modules menu]
+
+Then reach the **Model Generator AI** Modelio module (provided for the community by @Accceliance) and enter your own OpenAI API Key:
+
+* Please note that you may also select the OpenAI Model
+
+image:readme/ai data modeling 4.png[Entering API key]
+
 == Launching the Data Model generation
 
-== Verifying the generated Data Model
+First choose the landing node in the model database:
 
-== Verifying the generated Documentation
+image:readme/ai data modeling 5.png[Landing node]
 
-=== Outputting the Documentation as Excel file
+Open the IA Data Model generation Dialog:
 
-== What's Next ?
+image:readme/ai data modeling 6.png[Generation Dialog]
+
+Type the Data Model specification into the field, you may copy it from the link:https://github.com/acceliance/AIForDataModeling/blob/main/data%20model%20spec.txt[aforementioned file,window=_blank]
+
+Than launch generation using the proper button:
+
+image:readme/ai data modeling 7.png[Launch Generation]
+
+== Checking and Deploying the generated Data Model
+
+Once the AI responds, you get a textual dump of the generated Model that is visible in the dialog box:
+
+image:readme/ai data modeling 8.png[Model textual dump]
+
+You will find all the concepts described as input, here as Classes, Attributes & Relations with Cardinalities
+
+NOTE: You may notice documentation was allo generated, more on this later
+
+.Textual Dump
+****
+Info - Class => BusinessTransaction (mother=null, desc=A business transaction is an exchange of goods for payment. Executed on a date., domain=Business)
+
+Info - Attribute => BusinessTransaction.date (type=Date, desc=A business transaction is an exchange of goods for payment. Executed on a date.)
+
+Info - Class => Invoice (mother=BusinessTransaction@1, desc=An invoice is a type of business transaction. It contains invoice lines and a total amount. Linked to a customer., domain=Business)
+
+Info - Attribute => Invoice.totalAmount (type=Double, desc=An invoice is a type of business transaction. It contains invoice lines and a total amount. Linked to a customer.)
+
+Info - Relation => Invoice.invoiceLines (target=InvoiceLine, cardinality=OneToMany, desc=An invoice is a type of business transaction. It contains invoice lines and a total amount. Linked to a customer.)
+
+Info - Relation => Invoice.customer (target=Customer, cardinality=ManyToOne, desc=An invoice is a type of business transaction. It contains invoice lines and a total amount. Linked to a customer.)
+
+Info - Class => InvoiceLine (mother=null, desc=Contains product code, number of products purchased, and purchase price, domain=Business)
+
+Info - Attribute => InvoiceLine.productCode (type=String, desc=Contains product code, number of products purchased, and purchase price)
+
+Info - Attribute => InvoiceLine.numberOfProducts (type=Integer, desc=Contains product code, number of products purchased, and purchase price)
+
+Info - Attribute => InvoiceLine.purchasePrice (type=Double, desc=Contains product code, number of products purchased, and purchase price)
+
+Info - Class => Product (mother=null, desc=A product is a bill of materials with a code, label and catalog price, domain=Business)
+
+Info - Attribute => Product.code (type=String, desc=A product is a bill of materials with a code, label and catalog price)
+
+Info - Attribute => Product.label (type=String, desc=A product is a bill of materials with a code, label and catalog price)
+
+Info - Attribute => Product.catalogPrice (type=Double, desc=A product is a bill of materials with a code, label and catalog price)
+
+Info - Class => Receipt (mother=BusinessTransaction@1, desc=A receipt is an in-store purchase and is a type of business transaction. Contains receipt lines., domain=Business)
+
+Info - Relation => Receipt.receiptLines (target=ReceiptLine, cardinality=OneToMany, desc=A receipt is an in-store purchase and is a type of business transaction. Contains receipt lines.)
+
+Info - Class => ReceiptLine (mother=null, desc=Contains number of products and store purchase price, linked to a product; may include discount from marketing campaign, domain=Business)
+
+Info - Attribute => ReceiptLine.numberOfProducts (type=Integer, desc=Contains number of products and store purchase price, linked to a product; may include discount from marketing campaign)
+
+Info - Attribute => ReceiptLine.storePurchasePrice (type=Double, desc=Contains number of products and store purchase price, linked to a product; may include discount from marketing campaign)
+
+Info - Relation => ReceiptLine.product (target=Product, cardinality=ManyToOne, desc=Contains number of products and store purchase price, linked to a product; may include discount from marketing campaign)
+
+Info - Class => Customer (mother=null, desc=A customer is a legal entity, domain=Business)
+
+Info - Class => Store (mother=null, desc=The store is a coded list with code and label attributes; part of retail functional area, domain=Retail)
+
+Info - Attribute => Store.code (type=String, desc=The store is a coded list with code and label attributes; part of retail functional area)
+
+Info - Attribute => Store.label (type=String, desc=The store is a coded list with code and label attributes; part of retail functional area)
+
+Info - Relation => Store.city (target=City, cardinality=ManyToOne, desc=The store is a coded list with code and label attributes; part of retail functional area)
+
+Info - Class => City (mother=null, desc=A city is a codified list with code and label, domain=Retail)
+
+Info - Attribute => City.code (type=String, desc=A city is a codified list with code and label)
+
+Info - Attribute => City.label (type=String, desc=A city is a codified list with code and label)
+****
+
+== Checking the generated Model into Modelio
+
+The generated Model may be faulty if AI somehow hallucinated, wich may happen
+
+TIP: First check the Model before deploying using the check box in the dialog box
+
+Use the button to instanciate and check the erros in the log, here **no errors have been found**
+
+image:readme/ai data modeling 9.png[Checking the Model]
+
+== Instanciating the generated Model into Modelio
+
+Then uncheck the check box and again press the button to instanciate the Model
+
+All the Model artefacts have now been mounted in the Modelio database:
+
+image:readme/ai data modeling 10.png[Instanciated Model]
+
+== Diagramming the Model with Modelio
+
+Modelio includes (as all the modelers do) a diagramming facility
+
+TIP: Use drag and drop to bring the artefacts (left panel) to the surface of the iagram (righ panel)
+
+image:datamodel Class diagram.png[Instanciated Model]
+
+WARNING: You may find functional inconsistencies in the Model, this is absolutly normal, **the description is not accurate enough**
+
+== Outputting the Documentation as Excel file
+
+The documentation is an important part of Data Modeling as it contributes to:
+
+* Setting Enterprise vocabulary
+* May be reused to feed Enterprise Data Catalog
+
+TIP: Modelio can be used to output dump into format such as CSV to be imported into Data Catalog tool such as Data Galaxy
+
+Run the following steps:
+
+image:readme/ai data modeling 11.png[Dictionary Export]
+
+image:readme/ai data modeling 12.png[Launching Export]
+
+image:readme/ai data modeling 13.png[Business Objects]
+
+image:readme/ai data modeling 14.png[Dictionary]
+
+= Perspectives
+
+It is possible to generate link:https://www.acceliance.fr/en/offers/automated-data-platform/[Datavault Builder,window=_blank], link:https://github.com/acceliance/GovernanceForDatavault[Datavault,window=_blank], SQL schema or DBT Model from Modelio in a Continuum of  Architecture strategy
+
+= What's Next ?
+
 In a next version we will provide **IA continuity** facility. What is that ?
+
 When invoking IA 2 times, the generated output may vay
-This natural IA variation can be avoided so it is possible to expand Data Model specification while keeping solid versioning
+
+This natural IA variation can be avoided so it is possible to expand Data Model specification while keeping **solid versioning**
