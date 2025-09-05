@@ -1,9 +1,9 @@
 link:https://www.acceliance.fr/en/offers/governance-for-your-data-platform/[image:readme/logo-acc-amp-gauche-2400.png[]]
 
-= Artificial Intelligence For Data Modeling
+= Generative AI For Data Modeling
 
 
-Accceliance is pleased to provide you with a **Data Model Generator based on Artificial Intelligence** as a demonstration of AI power
+Accceliance is pleased to provide you with a **Data Model Generator based on Generative Artificial Intelligence** as a demonstration of AI power
 
 = How does it work ?
 
