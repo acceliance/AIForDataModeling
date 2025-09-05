@@ -14,7 +14,7 @@ NOTE: The description must be accurate so to limit the interpretation by the IA 
 
 IMPORTANT: The Agent is preset to to be **Experimented Data Architect** skilled so you dont need to handle this in the prompt
 
-Then the IA Agent is set to cimmunicate proper structured information back to Modelio modeler
+Then the IA Agent is set to communicate proper structured information back to Modelio modeler
 
 = The underlying Technology
 The stack is based on link:https://github.com/ModelioOpenSource/Modelio[Modelio modeler,window=_blank] with link:https://openai.com/[OpenAI,window=_blank]
@@ -29,7 +29,7 @@ link:https://github.com/ModelioOpenSource/Modelio/releases/tag/v5.4.1[*Modelio 5
 
 == Opening the provided and empty Modelio project
 
-Open the Modelio workspace:
+Switch to the Modelio workspace:
 
 image:readme/ai data modeling 1.png[Opening project folder]
 
@@ -45,7 +45,7 @@ image:readme/ai data modeling 3.png[Modules menu]
 
 Then reach the **Model Generator AI** Modelio module (provided for the community by @Accceliance) and enter your own OpenAI API Key:
 
-* Please note that you may also select the OpenAI Model
+NOTE: You may also select the OpenAI Model
 
 image:readme/ai data modeling 4.png[Entering API key]
 
@@ -136,7 +136,7 @@ Info - Attribute => City.label (type=String, desc=A city is a codified list with
 
 == Checking the generated Model into Modelio
 
-The generated Model may be faulty if AI somehow hallucinated, wich may happen
+The generated Model may be faulty if AI somehow hallucinated, wich may happen or if the input text is somewhat incoherent
 
 TIP: First check the Model before deploying using the check box in the dialog box
 
@@ -156,7 +156,7 @@ image:readme/ai data modeling 10.png[Instanciated Model]
 
 Modelio includes (as all the modelers do) a diagramming facility
 
-TIP: Use drag and drop to bring the artefacts (left panel) to the surface of the iagram (righ panel)
+TIP: Use drag and drop to bring the artefacts (left panel) to the surface of the diagram (righ panel)
 
 image:datamodel Class diagram.png[Instanciated Model]
 
@@ -183,7 +183,7 @@ image:readme/ai data modeling 14.png[Dictionary]
 
 = Perspectives
 
-It is possible to generate link:https://www.acceliance.fr/en/offers/automated-data-platform/[Datavault Builder,window=_blank], link:https://github.com/acceliance/GovernanceForDatavault[Datavault,window=_blank], SQL schema or DBT Model from Modelio in a Continuum of  Architecture strategy
+It is possible to generate link:https://www.acceliance.fr/en/offers/automated-data-platform/[Datavault Builder,window=_blank], link:https://github.com/acceliance/GovernanceForDatavault[Datavault,window=_blank], SQL schema or link:https://www.getdbt.com/[DBT Model,window=_blank] from Modelio in a **Continuum of Architecture strategy**
 
 = What's Next ?
 
@@ -192,3 +192,5 @@ In a next version we will provide **IA continuity** facility. What is that ?
 When invoking IA 2 times, the generated output may vay
 
 This natural IA variation can be avoided so it is possible to expand Data Model specification while keeping **solid versioning**
+
+__Stay tuned !__
