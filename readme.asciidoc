@@ -189,7 +189,7 @@ It is possible to generate link:https://www.acceliance.fr/en/offers/automated-da
 
 In a next version we will provide **IA continuity** facility. What is that ?
 
-When invoking IA 2 times, the generated output may vay
+When invoking IA 2 times, the generated output may vary
 
 This natural IA variation can be avoided so it is possible to expand Data Model specification while keeping **solid versioning**
 
