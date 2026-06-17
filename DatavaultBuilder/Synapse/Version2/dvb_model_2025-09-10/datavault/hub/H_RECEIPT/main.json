@@ -1,0 +1,9 @@
+{
+    "object_comment" : "Receipt is a type of business transaction representing an in-store purchase.",
+    "object_id" : "H_RECEIPT",
+    "object_name" : "RECEIPT",
+    "object_type" : "hub",
+    "properties" : {
+        "hub_subject_area_name" : "datamodel"
+    }
+}

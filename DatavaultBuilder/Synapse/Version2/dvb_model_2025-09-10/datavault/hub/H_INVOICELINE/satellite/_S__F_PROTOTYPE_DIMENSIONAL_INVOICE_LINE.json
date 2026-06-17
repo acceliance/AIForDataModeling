@@ -1,0 +1,36 @@
+{
+    "object_id" : "S_INVOICE_LINE_S__F_PROTOTYPE_DIMENSIONAL_INVOICE_LINE",
+    "object_name" : "prototype_dimensional_invoice_line",
+    "object_type" : "satellite",
+    "properties" : {
+        "column_ids" : [ {
+            "column_comment" : "Code of the product",
+            "column_id" : "DATAVAULT.S_INVOICE_LINE_S__F_PROTOTYPE_DIMENSIONAL_INVOICE_LINE_P.PRODUCTCODE",
+            "column_is_used" : false,
+            "column_name" : "PRODUCT_CODE_INVOICE_LINE",
+            "complete_data_type" : "VARCHAR"
+        }, {
+            "column_comment" : "Number of products purchased",
+            "column_id" : "DATAVAULT.S_INVOICE_LINE_S__F_PROTOTYPE_DIMENSIONAL_INVOICE_LINE_P.QUANTITY",
+            "column_is_used" : false,
+            "column_name" : "QUANTITY_INVOICE_LINE",
+            "complete_data_type" : "INTEGER"
+        }, {
+            "column_comment" : "Purchase price per product",
+            "column_id" : "DATAVAULT.S_INVOICE_LINE_S__F_PROTOTYPE_DIMENSIONAL_INVOICE_LINE_P.PURCHASEPRICE",
+            "column_is_used" : false,
+            "column_name" : "PURCHASE_PRICE_INVOICE_LINE",
+            "complete_data_type" : "FLOAT(53)"
+        }, {
+            "column_id" : "DATAVAULT.S_INVOICE_LINE_S__F_PROTOTYPE_DIMENSIONAL_INVOICE_LINE_P.ID",
+            "column_is_used" : false,
+            "column_name" : "ID_INVOICE_LINE",
+            "complete_data_type" : "VARCHAR"
+        } ],
+        "functional_suffix_id" : "prototype_dimensional_invoice_line",
+        "hub_id" : "H_INVOICELINE",
+        "is_cdc_load" : false,
+        "satellite_subject_area_name" : "datamodel",
+        "system_id" : "dvb_prototype"
+    }
+}

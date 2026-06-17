@@ -1,0 +1,13 @@
+{
+    "object_comment" : "Receipt contains receipt lines",
+    "object_id" : "l_receipt_t_receiptline_l_receiptlines",
+    "object_name" : "receipt_lines",
+    "object_type" : "link",
+    "properties" : {
+        "hub_a_id" : "h_receipt",
+        "hub_b_id" : "h_receiptline",
+        "link_subject_area_name" : "datamodel",
+        "link_suffix_id" : "receiptlines",
+        "link_type" : "one_to_many"
+    }
+}

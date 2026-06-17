@@ -1,0 +1,25 @@
+{
+    "object_id" : "s_city_s__f_prototype_dimensional_city",
+    "object_name" : "prototype_dimensional_city",
+    "object_type" : "satellite",
+    "properties" : {
+        "column_ids" : [ {
+            "column_comment" : "Code of the city",
+            "column_id" : "datavault.s_city_s__f_prototype_dimensional_city_p.code",
+            "column_is_used" : false,
+            "column_name" : "code_city",
+            "complete_data_type" : "STRING"
+        }, {
+            "column_comment" : "Label of the city",
+            "column_id" : "datavault.s_city_s__f_prototype_dimensional_city_p.label",
+            "column_is_used" : false,
+            "column_name" : "label_city",
+            "complete_data_type" : "STRING"
+        } ],
+        "functional_suffix_id" : "prototype_dimensional_city",
+        "hub_id" : "h_city",
+        "is_cdc_load" : false,
+        "satellite_subject_area_name" : "datamodel",
+        "system_id" : "dvb_prototype"
+    }
+}

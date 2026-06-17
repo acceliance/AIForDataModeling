@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="AIProvider" version="4">
+  <OBJECT>
+    <ID name="AIProvider" mc="Infrastructure.EnumeratedPropertyType" uid="09eeb215-81aa-4db6-9612-717ad272b164"/>
+    <PID name="ModelGeneratorAI" mc="Infrastructure.ModuleComponent" uid="381A3116-E47D-4B10-8CDC-EBAE4007F051"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">String</ATT>
+      <ATT name="Name"><![CDATA[AIProvider]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Litteral">
+        <OBJECT>
+          <ID name="OpenAI" mc="Infrastructure.PropertyEnumerationLitteral" uid="6b566f56-53ee-4fc0-a607-ef0b6b97051c"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[OpenAI]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Anthropic" mc="Infrastructure.PropertyEnumerationLitteral" uid="a7119666-98ff-4268-8748-25a1f3047b87"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Anthropic]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,191 @@
+version: 2
+models:
+  - name: Invoice
+    description: 'An invoice is a type of business transaction, containing invoice lines and a total amount.'
+    columns:
+      - name: idBusinessTransaction
+        description: 'Inheritance key relation to table.column Invoiceid.BusinessTransaction'
+        data_type: 'text'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: id
+            to: ref('BusinessTransaction')
+      - name: customer
+        description: 'null'
+        data_type: 'text'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: id
+            to: ref('Customer')
+      - name: totalAmount
+        description: 'The total amount of the invoice'
+        data_type: 'double precision'
+      - name: id
+        description: 'null'
+        data_type: 'text'
+        constraints:
+          - type: primary_key
+          - type: not_null
+  - name: InvoiceLine
+    description: 'Invoice line contains product code, number of products purchased, and a purchase price.'
+    columns:
+      - name: purchasePrice
+        description: 'Purchase price per product'
+        data_type: 'double precision'
+      - name: invoiceLinesInvoice
+        description: 'null'
+        data_type: 'text'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: id
+            to: ref('Invoice')
+      - name: product
+        description: 'null'
+        data_type: 'text'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: code
+            to: ref('Product')
+      - name: quantity
+        description: 'Number of products purchased'
+        data_type: 'integer'
+      - name: productCode
+        description: 'The code of the product'
+        data_type: 'text'
+  - name: ReceiptLine
+    description: 'Receipt line contains number of products and store purchase price that can be discounted, and is linked to a product.'
+    columns:
+      - name: product
+        description: 'null'
+        data_type: 'text'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: code
+            to: ref('Product')
+      - name: quantity
+        description: 'Number of products purchased in the receipt line'
+        data_type: 'integer'
+      - name: storePurchasePrice
+        description: 'The purchase price in store, can be discounted by campaigns'
+        data_type: 'double precision'
+      - name: receiptLinesReceipt
+        description: 'null'
+        data_type: 'text'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: id
+            to: ref('Receipt')
+  - name: Customer
+    description: 'The customer is a legal entity with first and second names'
+    columns:
+      - name: secondName
+        description: 'The second name of the customer'
+        data_type: 'text'
+      - name: firstName
+        description: 'The first name of the customer'
+        data_type: 'text'
+      - name: id
+        description: 'null'
+        data_type: 'text'
+        constraints:
+          - type: primary_key
+          - type: not_null
+  - name: Receipt
+    description: 'The receipt is an in-store purchase and a type of business transaction, produced in a store and contains receipt lines.'
+    columns:
+      - name: store
+        description: 'null'
+        data_type: 'text'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: code
+            to: ref('Store')
+      - name: idBusinessTransaction
+        description: 'Inheritance key relation to table.column Receiptid.BusinessTransaction'
+        data_type: 'text'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: id
+            to: ref('BusinessTransaction')
+      - name: id
+        description: 'null'
+        data_type: 'text'
+        constraints:
+          - type: primary_key
+          - type: not_null
+  - name: BusinessTransaction
+    description: 'A business transaction is an exchange of goods for payment executed on a date.'
+    columns:
+      - name: date
+        description: 'The execution date of the transaction'
+        data_type: 'timestamp'
+      - name: id
+        description: 'null'
+        data_type: 'text'
+        constraints:
+          - type: primary_key
+          - type: not_null
+  - name: Product
+    description: 'The product is a bill of materials with a code and a label, and catalog price.'
+    columns:
+      - name: label
+        description: 'The label or name of the product'
+        data_type: 'text'
+      - name: code
+        description: 'The unique code of the product'
+        data_type: 'text'
+        constraints:
+          - type: primary_key
+          - type: not_null
+      - name: catalogPrice
+        description: 'The catalog price of the product'
+        data_type: 'double precision'
+  - name: Store
+    description: 'The store is a coded list with a code and label, part of retail functional area, located in a city.'
+    columns:
+      - name: label
+        description: 'The label or name of the store'
+        data_type: 'text'
+      - name: code
+        description: 'The code of the store'
+        data_type: 'text'
+        constraints:
+          - type: primary_key
+          - type: not_null
+      - name: city
+        description: 'null'
+        data_type: 'text'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: code
+            to: ref('City')
+  - name: City
+    description: 'City is a codified list with code and label.'
+    columns:
+      - name: label
+        description: 'The label or name of the city'
+        data_type: 'text'
+      - name: code
+        description: 'The code of the city'
+        data_type: 'text'
+        constraints:
+          - type: primary_key
+          - type: not_null

@@ -1,0 +1,9 @@
+{
+    "object_comment" : "Product is a bill of materials with a code and a label and a catalog price.",
+    "object_id" : "h_product",
+    "object_name" : "product",
+    "object_type" : "hub",
+    "properties" : {
+        "hub_subject_area_name" : "datamodel"
+    }
+}

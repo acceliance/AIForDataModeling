@@ -1,0 +1,9 @@
+{
+    "object_comment" : "Invoice line contains product code, number of products purchased, and purchase price.",
+    "object_id" : "h_invoiceline",
+    "object_name" : "invoice_line",
+    "object_type" : "hub",
+    "properties" : {
+        "hub_subject_area_name" : "datamodel"
+    }
+}

@@ -1,0 +1,1 @@
+copy acceliance_demo_aifordatamodeling.lic acceliance_modelgeneratorai.lic

@@ -1,0 +1,24 @@
+{
+    "object_id" : "S_INVOICE_S__F_PROTOTYPE_DIMENSIONAL_INVOICE",
+    "object_name" : "prototype_dimensional_invoice",
+    "object_type" : "satellite",
+    "properties" : {
+        "column_ids" : [ {
+            "column_comment" : "The total amount of the invoice",
+            "column_id" : "DATAVAULT.S_INVOICE_S__F_PROTOTYPE_DIMENSIONAL_INVOICE_P.TOTALAMOUNT",
+            "column_is_used" : false,
+            "column_name" : "TOTAL_AMOUNT_INVOICE",
+            "complete_data_type" : "FLOAT8"
+        }, {
+            "column_id" : "DATAVAULT.S_INVOICE_S__F_PROTOTYPE_DIMENSIONAL_INVOICE_P.ID",
+            "column_is_used" : false,
+            "column_name" : "ID_INVOICE",
+            "complete_data_type" : "TEXT"
+        } ],
+        "functional_suffix_id" : "prototype_dimensional_invoice",
+        "hub_id" : "H_INVOICE",
+        "is_cdc_load" : false,
+        "satellite_subject_area_name" : "datamodel",
+        "system_id" : "dvb_prototype"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "object_id" : "S_BUSINESS_TRANSACTION_S__F_PROTOTYPE_DIMENSIONAL_BUSINESS_TRANSACTION",
+    "object_name" : "prototype_dimensional_business_transaction",
+    "object_type" : "satellite",
+    "properties" : {
+        "column_ids" : [ {
+            "column_comment" : "The date the transaction is executed",
+            "column_id" : "DATAVAULT.S_BUSINESS_TRANSACTION_S__F_PROTOTYPE_DIMENSIONAL_BUSINESS_TRANSACTION_P.DATE",
+            "column_is_used" : false,
+            "column_name" : "DATE_BUSINESS_TRANSACTION",
+            "complete_data_type" : "DATETIME"
+        }, {
+            "column_id" : "DATAVAULT.S_BUSINESS_TRANSACTION_S__F_PROTOTYPE_DIMENSIONAL_BUSINESS_TRANSACTION_P.ID",
+            "column_is_used" : false,
+            "column_name" : "ID_BUSINESS_TRANSACTION",
+            "complete_data_type" : "TEXT"
+        } ],
+        "functional_suffix_id" : "prototype_dimensional_business_transaction",
+        "hub_id" : "H_BUSINESSTRANSACTION",
+        "is_cdc_load" : false,
+        "satellite_subject_area_name" : "datamodel",
+        "system_id" : "dvb_prototype"
+    }
+}

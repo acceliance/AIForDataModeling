@@ -1,0 +1,9 @@
+{
+    "object_comment" : "An invoice is a type of business transaction.",
+    "object_id" : "h_invoice",
+    "object_name" : "invoice",
+    "object_type" : "hub",
+    "properties" : {
+        "hub_subject_area_name" : "datamodel"
+    }
+}

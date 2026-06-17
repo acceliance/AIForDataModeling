@@ -1,0 +1,36 @@
+{
+    "object_id" : "s_invoice_line_s__f_prototype_invoice_line",
+    "object_name" : "prototype_invoice_line",
+    "object_type" : "satellite",
+    "properties" : {
+        "column_ids" : [ {
+            "column_comment" : "Code of the product",
+            "column_id" : "datavault.s_invoice_line_s__f_prototype_invoice_line_p.productcode",
+            "column_is_used" : false,
+            "column_name" : "product_code",
+            "complete_data_type" : "text"
+        }, {
+            "column_comment" : "Number of products purchased",
+            "column_id" : "datavault.s_invoice_line_s__f_prototype_invoice_line_p.quantity",
+            "column_is_used" : false,
+            "column_name" : "quantity",
+            "complete_data_type" : "integer"
+        }, {
+            "column_comment" : "Purchase price per product",
+            "column_id" : "datavault.s_invoice_line_s__f_prototype_invoice_line_p.purchaseprice",
+            "column_is_used" : false,
+            "column_name" : "purchase_price",
+            "complete_data_type" : "double precision"
+        }, {
+            "column_id" : "datavault.s_invoice_line_s__f_prototype_invoice_line_p.id",
+            "column_is_used" : false,
+            "column_name" : "id",
+            "complete_data_type" : "text"
+        } ],
+        "functional_suffix_id" : "prototype_invoice_line",
+        "hub_id" : "h_invoiceline",
+        "is_cdc_load" : false,
+        "satellite_subject_area_name" : "datamodel",
+        "system_id" : "dvb_prototype"
+    }
+}

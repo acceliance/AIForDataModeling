@@ -1,0 +1,12 @@
+{
+    "object_comment" : "Child Hub",
+    "object_id" : "l_businesstransaction_t_invoice",
+    "object_name" : "child_hub",
+    "object_type" : "link",
+    "properties" : {
+        "hub_a_id" : "h_businesstransaction",
+        "hub_b_id" : "h_invoice",
+        "link_subject_area_name" : "datamodel",
+        "link_type" : "one_to_one"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "object_id" : "S_STORE_S__F_PROTOTYPE_DIMENSIONAL_STORE",
+    "object_name" : "prototype_dimensional_store",
+    "object_type" : "satellite",
+    "properties" : {
+        "column_ids" : [ {
+            "column_comment" : "Code of the store",
+            "column_id" : "DATAVAULT.S_STORE_S__F_PROTOTYPE_DIMENSIONAL_STORE_P.CODE",
+            "column_is_used" : false,
+            "column_name" : "CODE_STORE",
+            "complete_data_type" : "TEXT"
+        }, {
+            "column_comment" : "Label of the store",
+            "column_id" : "DATAVAULT.S_STORE_S__F_PROTOTYPE_DIMENSIONAL_STORE_P.LABEL",
+            "column_is_used" : false,
+            "column_name" : "LABEL_STORE",
+            "complete_data_type" : "TEXT"
+        } ],
+        "functional_suffix_id" : "prototype_dimensional_store",
+        "hub_id" : "H_STORE",
+        "is_cdc_load" : false,
+        "satellite_subject_area_name" : "Retail",
+        "system_id" : "dvb_prototype"
+    }
+}

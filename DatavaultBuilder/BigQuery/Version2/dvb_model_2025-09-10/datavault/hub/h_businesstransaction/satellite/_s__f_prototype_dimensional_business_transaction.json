@@ -1,0 +1,24 @@
+{
+    "object_id" : "s_business_transaction_s__f_prototype_dimensional_business_transaction",
+    "object_name" : "prototype_dimensional_business_transaction",
+    "object_type" : "satellite",
+    "properties" : {
+        "column_ids" : [ {
+            "column_comment" : "The date the transaction is executed",
+            "column_id" : "datavault.s_business_transaction_s__f_prototype_dimensional_business_transaction_p.date",
+            "column_is_used" : false,
+            "column_name" : "date_business_transaction",
+            "complete_data_type" : "DATE"
+        }, {
+            "column_id" : "datavault.s_business_transaction_s__f_prototype_dimensional_business_transaction_p.id",
+            "column_is_used" : false,
+            "column_name" : "id_business_transaction",
+            "complete_data_type" : "STRING"
+        } ],
+        "functional_suffix_id" : "prototype_dimensional_business_transaction",
+        "hub_id" : "h_businesstransaction",
+        "is_cdc_load" : false,
+        "satellite_subject_area_name" : "datamodel",
+        "system_id" : "dvb_prototype"
+    }
+}

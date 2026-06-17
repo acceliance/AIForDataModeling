@@ -1,0 +1,13 @@
+{
+    "object_comment" : "Invoice contains invoice lines",
+    "object_id" : "L_INVOICE_T_INVOICELINE_L_INVOICELINES",
+    "object_name" : "INVOICE_LINES",
+    "object_type" : "link",
+    "properties" : {
+        "hub_a_id" : "H_INVOICE",
+        "hub_b_id" : "H_INVOICELINE",
+        "link_subject_area_name" : "datamodel",
+        "link_suffix_id" : "INVOICELINES",
+        "link_type" : "one_to_many"
+    }
+}

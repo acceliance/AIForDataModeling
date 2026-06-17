@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="root" version="4">
+  <OBJECT>
+    <ID name="root" mc="Standard.Package" uid="6cda095e-b964-416f-a674-896d8b4a0526"/>
+    <PID name="Demo AI for Data Modeling" mc="Standard.Project" uid="beeed99a-f8ba-4e5e-a5d9-d2bcdd471a5f"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[root]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="fr" mc="Standard.Package" uid="208083fc-27a0-4916-a8b2-b2d803b3bcdb"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="CartographyManagerRootOfTheModel" mc="Infrastructure.Stereotype" uid="6a39137e-8d53-4358-8a20-41bdf91c9218"/>
+      </LINK>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="6a39137e-8d53-4358-8a20-41bdf91c9218" mc="Infrastructure.TypedPropertyTable" uid="b60978cc-4046-4676-ae37-0a33805c78a1"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[6a39137e-8d53-4358-8a20-41bdf91c9218]]></ATT>
+            <ATT name="Content"><![CDATA[#Mon Jun 01 15:33:38 CEST 2026
+isRootOfTheModel=true
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="a62954af-2503-49e6-a1c9-876db56c44d4"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="7fb9b522-1518-4962-9260-b8c9aa7197d1"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[root node stands for Java generation]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

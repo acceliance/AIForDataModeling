@@ -1,0 +1,31 @@
+{
+    "object_id" : "s_product_s__f_prototype_dimensional_product",
+    "object_name" : "prototype_dimensional_product",
+    "object_type" : "satellite",
+    "properties" : {
+        "column_ids" : [ {
+            "column_comment" : "Code of the product",
+            "column_id" : "datavault.s_product_s__f_prototype_dimensional_product_p.code",
+            "column_is_used" : false,
+            "column_name" : "code_product",
+            "complete_data_type" : "STRING"
+        }, {
+            "column_comment" : "Label of the product",
+            "column_id" : "datavault.s_product_s__f_prototype_dimensional_product_p.label",
+            "column_is_used" : false,
+            "column_name" : "label_product",
+            "complete_data_type" : "STRING"
+        }, {
+            "column_comment" : "Catalog price of the product",
+            "column_id" : "datavault.s_product_s__f_prototype_dimensional_product_p.catalogprice",
+            "column_is_used" : false,
+            "column_name" : "catalog_price_product",
+            "complete_data_type" : "FLOAT64"
+        } ],
+        "functional_suffix_id" : "prototype_dimensional_product",
+        "hub_id" : "h_product",
+        "is_cdc_load" : false,
+        "satellite_subject_area_name" : "datamodel",
+        "system_id" : "dvb_prototype"
+    }
+}

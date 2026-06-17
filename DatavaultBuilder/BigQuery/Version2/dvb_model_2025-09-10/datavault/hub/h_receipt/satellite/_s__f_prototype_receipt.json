@@ -1,0 +1,18 @@
+{
+    "object_id" : "s_receipt_s__f_prototype_receipt",
+    "object_name" : "prototype_receipt",
+    "object_type" : "satellite",
+    "properties" : {
+        "column_ids" : [ {
+            "column_id" : "datavault.s_receipt_s__f_prototype_receipt_p.id",
+            "column_is_used" : false,
+            "column_name" : "id",
+            "complete_data_type" : "STRING"
+        } ],
+        "functional_suffix_id" : "prototype_receipt",
+        "hub_id" : "h_receipt",
+        "is_cdc_load" : false,
+        "satellite_subject_area_name" : "datamodel",
+        "system_id" : "dvb_prototype"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "object_id" : "config",
+    "object_type" : "config",
+    "properties" : {
+        "datavault_key_type" : "hash_bytea",
+        "datavault_load_commit_batches" : "FALSE",
+        "datavault_load_sat_batch_size" : "10000000",
+        "datavault_load_sat_in_batches" : "FALSE",
+        "datavault_load_time" : "VAULT",
+        "datavault_preload_parent" : "TRUE",
+        "default_loading_batch_size" : "50000",
+        "default_staging_load_log_progress_update_size" : "10000",
+        "include_in_accesslayer_default" : "FALSE",
+        "max_parallel_loads" : "5",
+        "max_parallel_loads_from_staging_table" : "-1",
+        "max_parallel_staging" : "3",
+        "run_job_sql_query_on_core" : "TRUE",
+        "scheduled_jobs_reschedule_on_startup_if_older_than_seconds" : "0",
+        "staging_load_async" : "TRUE",
+        "transaction_link_fk_constraints" : "FALSE",
+        "transaction_link_parent_hub_constraints" : "FALSE",
+        "use_bulk_copy_on_mssql" : "TRUE"
+    }
+}

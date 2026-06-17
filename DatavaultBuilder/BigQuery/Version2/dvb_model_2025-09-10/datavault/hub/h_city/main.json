@@ -1,0 +1,9 @@
+{
+    "object_comment" : "City is a codified list with code and label.",
+    "object_id" : "h_city",
+    "object_name" : "city",
+    "object_type" : "hub",
+    "properties" : {
+        "hub_subject_area_name" : "datamodel"
+    }
+}

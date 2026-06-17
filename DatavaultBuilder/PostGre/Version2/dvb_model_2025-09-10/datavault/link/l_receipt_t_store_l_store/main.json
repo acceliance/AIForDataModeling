@@ -1,0 +1,12 @@
+{
+    "object_id" : "l_receipt_t_store_l_store",
+    "object_name" : "store",
+    "object_type" : "link",
+    "properties" : {
+        "hub_a_id" : "h_receipt",
+        "hub_b_id" : "h_store",
+        "link_subject_area_name" : "datamodel",
+        "link_suffix_id" : "store",
+        "link_type" : "many_to_one"
+    }
+}

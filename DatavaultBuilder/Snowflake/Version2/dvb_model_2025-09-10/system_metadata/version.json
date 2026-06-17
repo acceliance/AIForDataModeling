@@ -1,0 +1,12 @@
+{
+    "object_id" : "version",
+    "object_type" : "version",
+    "properties" : {
+        "build" : "4",
+        "client_db_type_id" : "snowflake",
+        "export_format" : "2.0",
+        "major" : 8,
+        "minor" : 4,
+        "revision" : 0
+    }
+}

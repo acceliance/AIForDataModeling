@@ -1,0 +1,13 @@
+{
+    "object_comment" : "Store is located in a city (codified list: code and label).",
+    "object_id" : "l_store_t_city_l_city",
+    "object_name" : "city",
+    "object_type" : "link",
+    "properties" : {
+        "hub_a_id" : "h_store",
+        "hub_b_id" : "h_city",
+        "link_subject_area_name" : "Retail",
+        "link_suffix_id" : "city",
+        "link_type" : "many_to_one"
+    }
+}

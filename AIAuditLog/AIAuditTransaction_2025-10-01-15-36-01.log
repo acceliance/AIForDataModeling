@@ -1,0 +1,26 @@
+Date = 2025-10-01 15:35:15Model = gpt-4.1-miniLanguage = FrenchInput Model Specification = le salon a une date et est posé sur une ville, il a aussi un titre
+
+les participants visitent le salonAI response = 
+```
+
+---
+
+### Explications :
+
+- **Salon** :  
+  - Attributs : `date` (Date), `titre` (String)  
+  - Relations :  
+    - `localiseDans` vers Ville (ManyToOne) car un salon est dans une seule ville, mais une ville a potentiellement plusieurs salons  
+    - `accueille` vers Participant (OneToMany) car un salon a plusieurs participants, chaque participant visite au moins un salon.  
+      
+- **Ville** :  
+  - Attribut : `nom` (String)  
+  - Pas de relations directes dans la description autre que côté Salon.  
+
+- **Participant** :  
+  - Attributs : `nom`, `prenom` (String)  
+  - Relation inverse non décrite (optionnelle). Ici on ne modélise que la relation du Salon vers Participant, ce qui est suffisant.  
+
+- **Héritage** : non spécifié dans le besoin, donc `mother` à null.  
+
+Si vous souhaitez le modèle complet avec références croisées pour les relations (ex : relations inverse), n'hésitez pas à me le demander.ResponseModel to insert = Class => Salon (mother=null, desc=Le salon a une date, un titre et se situe dans une ville., domain=evenementiel)  Attribute => Salon.date (type=Date, desc=Le salon a une date, un titre et se situe dans une ville.)  Attribute => Salon.titre (type=String, desc=Le salon a une date, un titre et se situe dans une ville.)  Relation => Salon.localiseDans (target=Ville, cardinality=ManyToOne, desc=Le salon a une date, un titre et se situe dans une ville.)  Relation => Salon.accueille (target=Participant, cardinality=OneToMany, desc=Le salon a une date, un titre et se situe dans une ville.)Class => Ville (mother=null, desc=Une ville où peut être situé un salon., domain=geographique)  Attribute => Ville.nom (type=String, desc=Une ville où peut être situé un salon.)Class => Participant (mother=null, desc=Une personne qui visite un salon., domain=evenementiel)  Attribute => Participant.nom (type=String, desc=Une personne qui visite un salon.)  Attribute => Participant.prenom (type=String, desc=Une personne qui visite un salon.)

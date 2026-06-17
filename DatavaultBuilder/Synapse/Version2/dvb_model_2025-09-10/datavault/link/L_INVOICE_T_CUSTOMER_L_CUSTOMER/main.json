@@ -1,0 +1,13 @@
+{
+    "object_comment" : "The invoice is linked to a customer who is a legal entity",
+    "object_id" : "L_INVOICE_T_CUSTOMER_L_CUSTOMER",
+    "object_name" : "CUSTOMER",
+    "object_type" : "link",
+    "properties" : {
+        "hub_a_id" : "H_INVOICE",
+        "hub_b_id" : "H_CUSTOMER",
+        "link_subject_area_name" : "datamodel",
+        "link_suffix_id" : "CUSTOMER",
+        "link_type" : "many_to_one"
+    }
+}

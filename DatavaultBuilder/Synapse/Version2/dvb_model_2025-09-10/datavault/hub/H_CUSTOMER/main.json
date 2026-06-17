@@ -1,0 +1,9 @@
+{
+    "object_comment" : "A customer who is a legal entity.",
+    "object_id" : "H_CUSTOMER",
+    "object_name" : "CUSTOMER",
+    "object_type" : "hub",
+    "properties" : {
+        "hub_subject_area_name" : "datamodel"
+    }
+}

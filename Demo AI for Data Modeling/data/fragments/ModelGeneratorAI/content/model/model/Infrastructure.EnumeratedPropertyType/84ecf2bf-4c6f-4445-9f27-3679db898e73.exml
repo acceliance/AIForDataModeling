@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ChatGPTModel" version="4">
+  <OBJECT>
+    <ID name="ChatGPTModel" mc="Infrastructure.EnumeratedPropertyType" uid="84ecf2bf-4c6f-4445-9f27-3679db898e73"/>
+    <PID name="ModelGeneratorAI" mc="Infrastructure.ModuleComponent" uid="381A3116-E47D-4B10-8CDC-EBAE4007F051"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">String</ATT>
+      <ATT name="Name"><![CDATA[ChatGPTModel]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Litteral">
+        <OBJECT>
+          <ID name="gpt-4.1" mc="Infrastructure.PropertyEnumerationLitteral" uid="d9782572-ad56-4963-baf8-2b3b9ba51cce"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[gpt-4.1]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="gpt-4.1-mini" mc="Infrastructure.PropertyEnumerationLitteral" uid="f7d871ee-c273-4606-9261-e9ff45a9f6de"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[gpt-4.1-mini]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="gpt-4.1-nano" mc="Infrastructure.PropertyEnumerationLitteral" uid="a3bf7d4e-c4f9-47aa-a85e-5f22b047c509"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[gpt-4.1-nano]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="gpt-4o" mc="Infrastructure.PropertyEnumerationLitteral" uid="43c96c08-76f4-4df8-836b-2244d7032445"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[gpt-4o]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="gpt-4o-mini" mc="Infrastructure.PropertyEnumerationLitteral" uid="ff43e347-4872-442f-ab73-437753dae40f"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[gpt-4o-mini]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="chatgpt-4o-latest" mc="Infrastructure.PropertyEnumerationLitteral" uid="03d6675d-81c8-49c4-a115-5a64cfec808a"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[chatgpt-4o-latest]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="o3-mini" mc="Infrastructure.PropertyEnumerationLitteral" uid="b1cb3a7d-78b5-43df-b629-8234d13178d6"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[o3-mini]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="o1-mini" mc="Infrastructure.PropertyEnumerationLitteral" uid="63e410ba-ebef-4c54-990c-686b80625e93"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[o1-mini]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

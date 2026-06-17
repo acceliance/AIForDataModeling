@@ -1,0 +1,30 @@
+{
+    "object_id" : "s_receipt_line_s__f_prototype_dimensional_receipt_line",
+    "object_name" : "prototype_dimensional_receipt_line",
+    "object_type" : "satellite",
+    "properties" : {
+        "column_ids" : [ {
+            "column_comment" : "Number of products purchased",
+            "column_id" : "datavault.s_receipt_line_s__f_prototype_dimensional_receipt_line_p.quantity",
+            "column_is_used" : false,
+            "column_name" : "quantity_receipt_line",
+            "complete_data_type" : "integer"
+        }, {
+            "column_comment" : "Store purchase price, possibly discounted in marketing campaign",
+            "column_id" : "datavault.s_receipt_line_s__f_prototype_dimensional_receipt_line_p.storepurchaseprice",
+            "column_is_used" : false,
+            "column_name" : "store_purchase_price_receipt_line",
+            "complete_data_type" : "double precision"
+        }, {
+            "column_id" : "datavault.s_receipt_line_s__f_prototype_dimensional_receipt_line_p.id",
+            "column_is_used" : false,
+            "column_name" : "id_receipt_line",
+            "complete_data_type" : "text"
+        } ],
+        "functional_suffix_id" : "prototype_dimensional_receipt_line",
+        "hub_id" : "h_receiptline",
+        "is_cdc_load" : false,
+        "satellite_subject_area_name" : "datamodel",
+        "system_id" : "dvb_prototype"
+    }
+}

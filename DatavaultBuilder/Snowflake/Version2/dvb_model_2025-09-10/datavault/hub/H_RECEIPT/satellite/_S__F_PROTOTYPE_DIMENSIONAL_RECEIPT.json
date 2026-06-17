@@ -1,0 +1,18 @@
+{
+    "object_id" : "S_RECEIPT_S__F_PROTOTYPE_DIMENSIONAL_RECEIPT",
+    "object_name" : "prototype_dimensional_receipt",
+    "object_type" : "satellite",
+    "properties" : {
+        "column_ids" : [ {
+            "column_id" : "DATAVAULT.S_RECEIPT_S__F_PROTOTYPE_DIMENSIONAL_RECEIPT_P.ID",
+            "column_is_used" : false,
+            "column_name" : "ID_RECEIPT",
+            "complete_data_type" : "TEXT"
+        } ],
+        "functional_suffix_id" : "prototype_dimensional_receipt",
+        "hub_id" : "H_RECEIPT",
+        "is_cdc_load" : false,
+        "satellite_subject_area_name" : "datamodel",
+        "system_id" : "dvb_prototype"
+    }
+}

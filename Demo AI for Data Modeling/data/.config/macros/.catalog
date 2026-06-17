@@ -1,0 +1,5 @@
+<?xml version="1.0" ?><catalog>
+<script name="importmodel" path="..\..\..\..\import_model.py" icon-path="" show-menu="false" show-toolbar="false">
+<description></description>
+</script>
+</catalog>

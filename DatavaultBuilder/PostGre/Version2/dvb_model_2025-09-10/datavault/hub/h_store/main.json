@@ -1,0 +1,9 @@
+{
+    "object_comment" : "Store is a coded list with code and label, part of retail functional area.",
+    "object_id" : "h_store",
+    "object_name" : "store",
+    "object_type" : "hub",
+    "properties" : {
+        "hub_subject_area_name" : "Retail"
+    }
+}

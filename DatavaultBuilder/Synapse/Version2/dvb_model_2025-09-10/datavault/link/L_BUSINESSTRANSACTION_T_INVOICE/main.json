@@ -1,0 +1,12 @@
+{
+    "object_comment" : "Child Hub",
+    "object_id" : "L_BUSINESSTRANSACTION_T_INVOICE",
+    "object_name" : "child_hub",
+    "object_type" : "link",
+    "properties" : {
+        "hub_a_id" : "H_BUSINESSTRANSACTION",
+        "hub_b_id" : "H_INVOICE",
+        "link_subject_area_name" : "datamodel",
+        "link_type" : "one_to_one"
+    }
+}

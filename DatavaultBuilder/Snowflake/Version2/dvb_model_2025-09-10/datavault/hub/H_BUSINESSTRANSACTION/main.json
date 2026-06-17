@@ -1,0 +1,9 @@
+{
+    "object_comment" : "A business transaction is an exchange of goods for payment.",
+    "object_id" : "H_BUSINESSTRANSACTION",
+    "object_name" : "BUSINESS_TRANSACTION",
+    "object_type" : "hub",
+    "properties" : {
+        "hub_subject_area_name" : "datamodel"
+    }
+}

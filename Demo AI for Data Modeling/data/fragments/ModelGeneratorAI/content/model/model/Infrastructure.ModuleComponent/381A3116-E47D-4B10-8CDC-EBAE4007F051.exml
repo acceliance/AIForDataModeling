@@ -1,0 +1,131 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ModelGeneratorAI" version="4">
+  <OBJECT>
+    <ID name="ModelGeneratorAI" mc="Infrastructure.ModuleComponent" uid="381A3116-E47D-4B10-8CDC-EBAE4007F051"/>
+    <ATTRIBUTES>
+      <ATT name="LicenseKey">0</ATT>
+      <ATT name="MajVersion">5</ATT>
+      <ATT name="MinVersion">4</ATT>
+      <ATT name="MinMinVersion"><![CDATA[1]]></ATT>
+      <ATT name="MinBinVersionCompatibility"></ATT>
+      <ATT name="JavaClassName"><![CDATA[fr.acceliance.modelio.modelgenai.impl.ModelGeneratorAIModule]]></ATT>
+      <ATT name="Name"><![CDATA[ModelGeneratorAI]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedPropertyType">
+        <COMPID name="AIProvider" mc="Infrastructure.EnumeratedPropertyType" uid="C2435FD4-6E0A-4FCC-9C66-003D0BF857D5"/>
+        <COMPID name="AIProvider" mc="Infrastructure.EnumeratedPropertyType" uid="09eeb215-81aa-4db6-9612-717ad272b164"/>
+        <COMPID name="ChatGPTModel" mc="Infrastructure.EnumeratedPropertyType" uid="84ecf2bf-4c6f-4445-9f27-3679db898e73"/>
+        <COMPID name="ClaudeModel" mc="Infrastructure.EnumeratedPropertyType" uid="86b5d077-b4c5-4a74-a11d-123f803f5004"/>
+      </COMP>
+      <COMP relation="OwnedProfile">
+        <COMPID name="ModelGeneratorAIProfile" mc="Infrastructure.Profile" uid="76AA52D2-0C80-4223-ADA0-A26ED299A9CF"/>
+      </COMP>
+      <COMP relation="ModuleParameter">
+        <OBJECT>
+          <ID name="AuditLogPath" mc="Infrastructure.ModuleParameter" uid="DBDE4876-459A-433E-A5A0-392621AF96F2"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_DIRECTORY</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[AuditLogPath]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="AIProvider" mc="Infrastructure.ModuleParameter" uid="8E5A3D7C-2F11-4E1B-9E7F-1B0C7D12E001"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_ENUM</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"><![CDATA[OpenAI]]></ATT>
+            <ATT name="Name"><![CDATA[AIProvider]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="EnumType">
+              <ID name="AIProvider" mc="Infrastructure.EnumeratedPropertyType" uid="09eeb215-81aa-4db6-9612-717ad272b164"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="ChatGPTModel" mc="Infrastructure.ModuleParameter" uid="F1AD7329-608D-4144-851A-9B46255344E2"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_ENUM</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"><![CDATA[gpt-4o]]></ATT>
+            <ATT name="Name"><![CDATA[ChatGPTModel]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="EnumType">
+              <ID name="ChatGPTModel" mc="Infrastructure.EnumeratedPropertyType" uid="84ecf2bf-4c6f-4445-9f27-3679db898e73"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="ChatGPTAPI" mc="Infrastructure.ModuleParameter" uid="b662d7e6-b1bd-489b-b965-b7832974ccb3"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_PASSWORD</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[ChatGPTAPI]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="ClaudeModel" mc="Infrastructure.ModuleParameter" uid="A1B2C3D4-E5F6-4A7B-8C9D-0E1F2A3B4C5D"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_ENUM</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"><![CDATA[claude-sonnet-4-6]]></ATT>
+            <ATT name="Name"><![CDATA[ClaudeModel]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="EnumType">
+              <ID name="ClaudeModel" mc="Infrastructure.EnumeratedPropertyType" uid="86b5d077-b4c5-4a74-a11d-123f803f5004"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="ClaudeAPI" mc="Infrastructure.ModuleParameter" uid="B2C3D4E5-F6A7-4B8C-9D0E-1F2A3B4C5D6E"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_PASSWORD</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[ClaudeAPI]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

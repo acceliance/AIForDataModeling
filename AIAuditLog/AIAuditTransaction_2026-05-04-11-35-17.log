@@ -1,0 +1,30 @@
+Date = 2026-05-04 11:34:06Provider = OpenAIModel = gpt-4.1-miniLanguage = FrenchInput Model Specification = La transaction business est un échange de marchandise contre paiement
+La transaction s'exécute à une date
+
+La facture est une sorte de transaction business
+La facture contient des lignes.
+
+La ligne de facture contient un code de produit, un nombre de ces produits achetés et un prix d'achat.
+Le produit est une nomenclature avec un code et libellé.
+Le produit possède également un prix catalogue.
+La facture un montant total.
+
+La facture est reliée à un client qui est une personne morale
+
+Le ticket de caisse est un acte d'achat en magasin
+
+Le ticket est une sorte de transaction business
+
+Le ticket contient des lignes de ticket, chaque ligne est reliée à un produit, la ligne contient un nombre de produits et un prix d'achat en magasin qui peut faire l'objet d'un discount en rapport avec une campagne marketing
+
+La ligne de ticket n'est pas une sorte de ticket
+
+Le magasin est une liste codifiée avec les attributs code et libellé. Le magasin fait partie du domaine fonctionnel retail.
+
+Le magasin est situé dans une ville qui est une liste codifié code et libellé.
+La ville est un concept qui se trouve dans le domaine des référentiels.
+
+
+
+AI response = 
+```ResponseModel to insert = Class => TransactionBusiness (mother=null, desc=Transaction business est un échange de marchandise contre paiement, s'exécutant à une date, domain=)  Attribute => TransactionBusiness.date (type=Date, desc=Transaction business est un échange de marchandise contre paiement, s'exécutant à une date)Class => Facture (mother=TransactionBusiness, desc=La facture est une sorte de transaction business, contenant des lignes et un montant total, domain=)  Attribute => Facture.montantTotal (type=Double, desc=La facture est une sorte de transaction business, contenant des lignes et un montant total)  Relation => Facture.contient (target=LigneFacture, cardinality=OneToMany, desc=La facture est une sorte de transaction business, contenant des lignes et un montant total)  Relation => Facture.relieA (target=Client, cardinality=ManyToOne, desc=La facture est une sorte de transaction business, contenant des lignes et un montant total)Class => LigneFacture (mother=null, desc=La ligne de facture contient un code de produit, un nombre acheté et un prix d'achat, domain=)  Attribute => LigneFacture.codeProduit (type=String, desc=La ligne de facture contient un code de produit, un nombre acheté et un prix d'achat)  Attribute => LigneFacture.quantite (type=Integer, desc=La ligne de facture contient un code de produit, un nombre acheté et un prix d'achat)  Attribute => LigneFacture.prixAchat (type=Double, desc=La ligne de facture contient un code de produit, un nombre acheté et un prix d'achat)  Relation => LigneFacture.associeA (target=Produit, cardinality=ManyToOne, desc=La ligne de facture contient un code de produit, un nombre acheté et un prix d'achat)Class => Produit (mother=null, desc=Produit est une nomenclature avec un code, un libellé et un prix catalogue, domain=)  Attribute => Produit.code (type=String, desc=Produit est une nomenclature avec un code, un libellé et un prix catalogue)  Attribute => Produit.libelle (type=String, desc=Produit est une nomenclature avec un code, un libellé et un prix catalogue)  Attribute => Produit.prixCatalogue (type=Double, desc=Produit est une nomenclature avec un code, un libellé et un prix catalogue)Class => Client (mother=null, desc=Client est une personne morale, domain=)Class => Ticket (mother=TransactionBusiness, desc=Le ticket de caisse est un acte d'achat en magasin, une sorte de transaction business, domain=)  Relation => Ticket.contient (target=LigneTicket, cardinality=OneToMany, desc=Le ticket de caisse est un acte d'achat en magasin, une sorte de transaction business)Class => LigneTicket (mother=null, desc=Une ligne de ticket contient un nombre de produits, un prix d'achat en magasin pouvant avoir un discount, domain=)  Attribute => LigneTicket.quantite (type=Integer, desc=Une ligne de ticket contient un nombre de produits, un prix d'achat en magasin pouvant avoir un discount)  Attribute => LigneTicket.prixAchatMagasin (type=Double, desc=Une ligne de ticket contient un nombre de produits, un prix d'achat en magasin pouvant avoir un discount)  Attribute => LigneTicket.discount (type=Double, desc=Une ligne de ticket contient un nombre de produits, un prix d'achat en magasin pouvant avoir un discount)  Relation => LigneTicket.associeA (target=Produit, cardinality=ManyToOne, desc=Une ligne de ticket contient un nombre de produits, un prix d'achat en magasin pouvant avoir un discount)Class => Magasin (mother=null, desc=Magasin est une liste codifiée avec code et libellé, appartenant au domaine retail, domain=retail)  Attribute => Magasin.code (type=String, desc=Magasin est une liste codifiée avec code et libellé, appartenant au domaine retail)  Attribute => Magasin.libelle (type=String, desc=Magasin est une liste codifiée avec code et libellé, appartenant au domaine retail)  Relation => Magasin.situeA (target=Ville, cardinality=ManyToOne, desc=Magasin est une liste codifiée avec code et libellé, appartenant au domaine retail)Class => Ville (mother=null, desc=Ville est une liste codifiée avec code et libellé, concept dans le domaine des référentiels, domain=referentiels)  Attribute => Ville.code (type=String, desc=Ville est une liste codifiée avec code et libellé, concept dans le domaine des référentiels)  Attribute => Ville.libelle (type=String, desc=Ville est une liste codifiée avec code et libellé, concept dans le domaine des référentiels)

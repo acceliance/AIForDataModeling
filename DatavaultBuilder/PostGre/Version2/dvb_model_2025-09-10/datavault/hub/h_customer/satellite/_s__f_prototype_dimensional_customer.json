@@ -1,0 +1,24 @@
+{
+    "object_id" : "s_customer_s__f_prototype_dimensional_customer",
+    "object_name" : "prototype_dimensional_customer",
+    "object_type" : "satellite",
+    "properties" : {
+        "column_ids" : [ {
+            "column_comment" : "Name of the customer/legal entity",
+            "column_id" : "datavault.s_customer_s__f_prototype_dimensional_customer_p.name",
+            "column_is_used" : false,
+            "column_name" : "name_customer",
+            "complete_data_type" : "text"
+        }, {
+            "column_id" : "datavault.s_customer_s__f_prototype_dimensional_customer_p.id",
+            "column_is_used" : false,
+            "column_name" : "id_customer",
+            "complete_data_type" : "text"
+        } ],
+        "functional_suffix_id" : "prototype_dimensional_customer",
+        "hub_id" : "h_customer",
+        "is_cdc_load" : false,
+        "satellite_subject_area_name" : "datamodel",
+        "system_id" : "dvb_prototype"
+    }
+}

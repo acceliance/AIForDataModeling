@@ -1,0 +1,13 @@
+{
+    "object_comment" : "Receipt line is linked to a product",
+    "object_id" : "L_RECEIPTLINE_T_PRODUCT_L_PRODUCT",
+    "object_name" : "PRODUCT",
+    "object_type" : "link",
+    "properties" : {
+        "hub_a_id" : "H_RECEIPTLINE",
+        "hub_b_id" : "H_PRODUCT",
+        "link_subject_area_name" : "datamodel",
+        "link_suffix_id" : "PRODUCT",
+        "link_type" : "many_to_one"
+    }
+}

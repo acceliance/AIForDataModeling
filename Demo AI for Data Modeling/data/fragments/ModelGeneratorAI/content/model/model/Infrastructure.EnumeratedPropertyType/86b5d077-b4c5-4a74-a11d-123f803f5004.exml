@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ClaudeModel" version="4">
+  <OBJECT>
+    <ID name="ClaudeModel" mc="Infrastructure.EnumeratedPropertyType" uid="86b5d077-b4c5-4a74-a11d-123f803f5004"/>
+    <PID name="ModelGeneratorAI" mc="Infrastructure.ModuleComponent" uid="381A3116-E47D-4B10-8CDC-EBAE4007F051"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">String</ATT>
+      <ATT name="Name"><![CDATA[ClaudeModel]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Litteral">
+        <OBJECT>
+          <ID name="claude-opus-4-7" mc="Infrastructure.PropertyEnumerationLitteral" uid="01fca33b-27cf-45b3-9cad-17a0dd83f652"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[claude-opus-4-7]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="claude-sonnet-4-6" mc="Infrastructure.PropertyEnumerationLitteral" uid="8fd4a4c2-40f0-4c33-a2be-b05f81dbe2cb"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[claude-sonnet-4-6]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="claude-haiku-4-5-20251001" mc="Infrastructure.PropertyEnumerationLitteral" uid="4490e0a3-2194-45b7-8d0d-1dc4cf12cf22"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[claude-haiku-4-5-20251001]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="claude-3-7-sonnet-latest" mc="Infrastructure.PropertyEnumerationLitteral" uid="0a65e039-fe5e-48dc-b90b-8d864f85ebc3"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[claude-3-7-sonnet-latest]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="claude-3-5-sonnet-latest" mc="Infrastructure.PropertyEnumerationLitteral" uid="251de28d-f8b0-4961-9096-3bc6cf979e10"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[claude-3-5-sonnet-latest]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="claude-3-5-haiku-latest" mc="Infrastructure.PropertyEnumerationLitteral" uid="8502db02-5275-4d79-97cb-c8ae9e8ccaf5"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[claude-3-5-haiku-latest]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

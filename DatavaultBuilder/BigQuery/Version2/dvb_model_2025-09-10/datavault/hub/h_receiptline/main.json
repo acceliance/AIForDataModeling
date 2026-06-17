@@ -1,0 +1,9 @@
+{
+    "object_comment" : "Receipt line linked to a product, contains number of products and store purchase price possibly discounted.",
+    "object_id" : "h_receiptline",
+    "object_name" : "receipt_line",
+    "object_type" : "hub",
+    "properties" : {
+        "hub_subject_area_name" : "datamodel"
+    }
+}
