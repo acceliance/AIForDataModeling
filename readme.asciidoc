@@ -2,6 +2,16 @@ link:https://www.acceliance.fr/en/offers/governance-for-your-data-platform/[imag
 
 = Generative AI For Data Modeling with Continuity and Auditability
 
+image:https://img.shields.io/badge/Modelio-5.4.1-blue[Modelio 5.4.1,link=https://github.com/ModelioOpenSource/Modelio/releases/tag/v5.4.1,window=_blank]
+image:https://img.shields.io/badge/Java-11-007396?logo=openjdk&logoColor=white[Java 11]
+image:https://img.shields.io/badge/OpenAI-GPT--4.1%20%7C%20GPT--4o-412991[OpenAI,link=https://openai.com/,window=_blank]
+image:https://img.shields.io/badge/Anthropic-Claude-D97757?logo=anthropic&logoColor=white[Claude,link=https://claude.ai/,window=_blank]
+
+image:https://img.shields.io/badge/AI%20Continuity-incremental%20versioning-success[AI Continuity]
+image:https://img.shields.io/badge/Auditability-full%20audit%20log-success[Auditability]
+image:https://img.shields.io/badge/licence-demo%20licence%20(free)-green[Demo licence, free]
+image:https://img.shields.io/badge/vendor-Acceliance-orange[Acceliance,link=https://www.acceliance.fr,window=_blank]
+image:https://img.shields.io/github/last-commit/acceliance/AIForDataModeling[Last commit,link=https://github.com/acceliance/AIForDataModeling/commits/main,window=_blank]
 
 Accceliance is pleased to provide you with a **Data Model Generator based on Generative Artificial Intelligence** as a demonstration of AI power
 
